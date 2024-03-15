@@ -1,0 +1,35 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.app{
+  background-color: black;
+  height: 100vh;
+  padding: 40px;
+}
+.main-conatiner{
+  display: flex;
+  height: 100%;
+}
+.text-conatiner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+a{
+  font-size: 105px;
+  color: rgb(240,56,0);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.white-text{
+  color: white;
+}
+a:hover{
+  padding-left:13px;
+}
