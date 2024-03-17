@@ -6,7 +6,6 @@
 .app{
   background-color: black;
   height: 100vh;
-  padding: 40px;
 }
 .main-conatiner{
   display: flex;
@@ -14,6 +13,7 @@
 }
 .text-conatiner{
   display: flex;
+  z-index: 20;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -25,11 +25,23 @@ a{
   cursor: pointer;
   font-weight: bolder;
   text-decoration: none;
+  margin-left: 60px;
 }
-
 .white-text{
   color: white;
 }
 a:hover{
   padding-left:13px;
+}
+.theme{
+  display: flex;
+  width: max-content;
+  justify-self: flex-end;
+  position: absolute;
+  right: 70px;
+  margin-top: 40px;
+  color: beige;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
 }
