@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './switch.css';
 
-function ToggleSwitch() {
+function ToggleSwitch({bgChange}) {
     const [isChecked, setIsChecked] = useState(false);
 
     const toggleSwitch = () => {
         setIsChecked(!isChecked);
+        bgChange(isChecked)
     };
 
     return (

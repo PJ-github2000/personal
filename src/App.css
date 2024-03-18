@@ -7,6 +7,10 @@
   background-color: black;
   height: 100vh;
 }
+.app-white{
+  background-color: white;
+  height: 100vh;
+}
 .main-conatiner{
   display: flex;
   height: 100%;
@@ -29,6 +33,9 @@ a{
 }
 .white-text{
   color: white;
+}
+.black-text{
+  color: black;
 }
 a:hover{
   padding-left:13px;
