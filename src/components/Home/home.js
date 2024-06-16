@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../App.css";
 import Animation from "../../animate";
 import ToggleSwitch from "../../switch/switch.jsx";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 function Home() {
   const [hidden, setHidden] = useState(true);
@@ -14,45 +14,39 @@ function Home() {
   };
 
   
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className={`${bg[0]}`}>
       <Animation />
       <div className="main-conatiner">
         <div className="text-conatiner">
-          <a
-            href="/about"
-            className={`${bg[1]}`}
+          <Link
+            to={"/about"}
+            className={`${bg[1]} text`}
             onMouseEnter={() => setHidden(false)}
             onMouseLeave={() => setHidden(true)}
-            // onClick={(e) => handleNavigation(e, '/about')}
           >
             {hidden ? "Hey." : "About"}
-          </a>
-          <a
-            href="www.facebook.com"
-            className="iam-section"
+          </Link>
+          <Link
+            to={"/project"}
+            className="iam-section text"
             onMouseEnter={() => setWork(false)}
             onMouseLeave={() => setWork(true)}
           >
             {work ? "I am" : "Projects"}
-          </a>
-          <a
-            href="www.facebook.com"
-            className="name-section"
+          </Link>
+          <Link
+            to={"/contact"}
+            className="name-section text"
             onMouseEnter={() => setContact(false)}
             onMouseLeave={() => setContact(true)}
           >
             {contact ? "Praveen" : "Contact"}
-          </a>
+          </Link>
         </div>
         <img className="img-" src="" alt="" />
-        <div className="theme">
-          <h1 className={`${bg[1]}`}>Light</h1>
-          <ToggleSwitch bgChange={background} />
-          <h1 className={`${bg[1]}`}>Dark</h1>
-        </div>
       </div>
     </div>
   );

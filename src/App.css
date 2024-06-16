@@ -22,7 +22,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-a{
+.text{
   font-size: 105px;
   color: rgb(240,56,0);
   transition-duration: 0.4s;
@@ -37,7 +37,7 @@ a{
 .black-text{
   color: black;
 }
-a:hover{
+.text:hover{
   padding-left:13px;
 }
 .theme{
