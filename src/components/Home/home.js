@@ -1,24 +1,13 @@
 import { useState } from "react";
 import "../../App.css";
-import Animation from "../../animate";
-import ToggleSwitch from "../../switch/switch.jsx";
 import { Link} from "react-router-dom";
 
-function Home() {
+function Home({bg}) {
   const [hidden, setHidden] = useState(true);
-  const [bg, setBg] = useState(["app-white", "black-text"]);
   const [work, setWork] = useState(true);
   const [contact, setContact] = useState(true);
-  const background = (toggle) => {
-    toggle ? setBg(["app-white", "black-text"]) : setBg(["app", "white-text"]);
-  };
-
-  
-  // const navigate = useNavigate();
 
   return (
-    <div className={`${bg[0]}`}>
-      <Animation />
       <div className="main-conatiner">
         <div className="text-conatiner">
           <Link
@@ -48,7 +37,6 @@ function Home() {
         </div>
         <img className="img-" src="" alt="" />
       </div>
-    </div>
   );
 }
 
