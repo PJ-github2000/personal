@@ -1,0 +1,41 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .message-input {
+    border: none;
+    padding: 12px;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(27, 27, 27, 0.903);
+    font-weight: 600;
+  }
+  
+  .notification {
+    box-shadow: 0 0 8px rgba(30, 30, 30, 0.8) !important ;
+  }
+  
+  .error-text {
+    padding: 0%;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(222, 81, 81);
+  }
+  
+  .submit-btn {
+    background-color: #286961;
+    color: #fff;
+    font-size: 14px;
+  }

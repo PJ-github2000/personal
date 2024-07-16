@@ -1,0 +1,147 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 60px;
+    animation: opa 1.3s ease-in forwards;
+  }
+  .contact-items-container {
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+    /* padding: 20px; */
+    border-radius: 20%;
+    transition: box-shadow 0.2s;
+    /* box-shadow: 0 0 8px rgb(62, 62, 62); */
+  }
+  .contact-item:hover {
+    border: 2px solid #fff;
+    box-shadow: 0 0 12px #ffffff;
+  }
+  .contact-item:active {
+    scale: 97%;
+  }
+  
+  .cont-div {
+    display: flex;
+    gap: 60px;
+  }
+  .mail {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  @keyframes opa {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .contact-img {
+    width: 150px;
+  }
+  
+  .contact-heading {
+    font-family: 'Roboto';
+    /* font-weight: 500; */
+    color: #38aa9c;
+  }
+  
+  .scanner {
+    /* height: 230px; */
+    width: 220px;
+    border-radius: 15px;
+  }
+  
+  .popup-content {
+    box-sizing: border-box;
+    width: 500px !important;
+    border-radius: 15px;
+    display: flex;
+    /* gap: 30px; */
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: rgb(42, 45, 46) !important;
+    border: 0 !important;
+    outline: none;
+  }
+  .contact-link {
+    outline: none;
+    text-decoration: none;
+    color: aqua;
+  }
+  
+  .or {
+    color: #fff;
+  }
+  
+  .contact-item {
+    animation: ani1 0.9s;
+  }
+  
+  @keyframes ani1 {
+    0% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .contact-heading {
+    font-size: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-items-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 0;
+    }
+    .contact-item {
+      padding: 5px;
+      padding-top: 9px;
+      width: 100px;
+      height: 100px;
+    }
+    .cont-div {
+      flex-direction: column;
+      gap: 6px;
+    }
+    .popup-content {
+      flex-direction: column;
+      width: 300px !important;
+      height: 420px;
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      /* gap: 30px; */
+    }
+    .cont-icon {
+    }
+    .contact-name {
+    }
+  }
+  .contact-an {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-an:hover {
+    scale: 1.1;
+  }
